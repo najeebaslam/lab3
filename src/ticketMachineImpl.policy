@@ -1,0 +1,3 @@
+grant codeBase "file:/home/najeeb/semester1/labs/labst/lab3/TicketingSystem/src" {
+    permission java.security.AllPermission;
+};
