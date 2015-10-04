@@ -18,7 +18,7 @@ class TicketMachineImpl implements TicketSystem
     	System.out.print("This method will be used latter");
     }
     // synchronized method for dealing with shared critial data <totalTickets>
-    // Implementing monitor constract 
+    // somehow Implementing monitor construct  
     private synchronized String handleRequest(int nb_tickets, String location) throws RemoteException
     {
         String result;
@@ -28,7 +28,7 @@ class TicketMachineImpl implements TicketSystem
         }else{
         	result = "Sorry !! "+location +" "+  nb_tickets + " Tickets are not available  now.";
         }
-        System.out.println("\t Remaing tickets : " + totalTickets); 
+        System.out.println("\t Remaining tickets : " + totalTickets); 
         return result;
     }
     
