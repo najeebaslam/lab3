@@ -23,7 +23,7 @@ class clientThread implements Runnable {
         int sleepTime = randomGenerator.nextInt(100000);
         Thread.sleep(sleepTime);
         int ticketCount = randomGenerator.nextInt(15)+1;
-	   	  String status = ticketHandler.reserve(ticketCount, clientName);
+	String status = ticketHandler.reserve(ticketCount, clientName);
         System.out.println(status);
       }catch(Exception e){
         e.printStackTrace();
