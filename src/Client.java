@@ -30,12 +30,6 @@ class clientThread implements Runnable {
       }
     } 
 
-  public void start(){
-    if (t == null){
-        t = new Thread (this, clientName);
-        t.start ();
-    }
-
   }
 
 }
